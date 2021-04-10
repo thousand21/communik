@@ -9,35 +9,43 @@
 </head>
 <body>
    <!--  header -->
-   <header>
+   <header >
+            <!-- on cree une section qui regroupe le haut du header -->
              <!-- la nav bar du header+icone -->
        <section id="headertop">
+            <!-- on met licone a gauche du header top -->
             <div><img src="/public/img/logo-horizontal-fond-noir-couleur.png" alt=""></div>
-            <nav>
-                <ul>
-                    <li><a href=""><span><img src="./public/img/home-icon.png" alt=""></span><span> HOME</span></a></li>
-                    <li><a href=""><span><img src="./public/img/packages-icon.png" alt=""></span><span>PACKAGES</span></a></li>
-                    <li><a href=""><span><img src="./public/img/outils-icon.png" alt=""></span><span>OUTILS</span></a></li>
-                    <li><a href=""><span><img src="./public/img/projets-icon.png" alt=""></span><span>PROJETS</span></a></li>
-                    <li><a href=""><span><img src="./public/img/temoignages-icon.png" alt=""></span><span>TEMOIGNAGNES</span></a></li>
-                    <li><a href=""><span><img src="./public/img/contact-icon.png" alt=""></span><span>CONTACT</span></a></li>
+            <!-- ici on attaque le nav -->
+            <nav id="headernav">
+                <!-- on cree une ul avec 6 listes -->
+                <ul id="headernavul">
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/home-icon.png" alt=""></span><span> HOME</span></a></li>
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/packages-icon.png" alt=""></span><span>PACKAGES</span></a></li>
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/outils-icon.png" alt=""></span><span>OUTILS</span></a></li>
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/projets-icon.png" alt=""></span><span>PROJETS</span></a></li>
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/temoignages-icon.png" alt=""></span><span>TEMOIGNAGNES</span></a></li>
+                    <li class="headernavlist"><a href=""><span><img src="./public/img/contact-icon.png" alt=""></span><span>CONTACT</span></a></li>
 
                  </ul>
-            </nav>       
+            </nav> 
+            <!-- fin nav -->      
         </section>
-    <!-- fin nav -->
+        <!-- fin du haut de la section -->
 
-
+                
+    
         <!-- la banniere du header -->
-        <section>
-            <div><img src="./public/img/packages.png" alt=""></div>
+        <div id="banniereheader">
+            <!-- limage package a gauche -->
+            <div><img id="imgpackage"src="./public/img/packages.png" alt=""></div>
+            <!-- une div qui regroupe le texte a droite -->
             <div id="headerdiv">
                 <div ><h1>a chaque etape son pack</h1></div>
                 <div><p> naitre, grandir et prosperer</p></div>
             </div>
             
 
-        </section>
+        </div>
         <!-- fin banniere du header -->
         
    </header>
@@ -45,17 +53,51 @@
    <!-- debut du corps -->
 
    <!-- debut 1ere section -->
-   <section>
-       <div><h1>Eclosion</h1></div>
-       <div>
-        <span><img src="./public/img/icon-eclosion.png" alt=""></span>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis minima, mollitia in neque id accusantium fuga molestias dolor quibusdam blanditiis quas dolores rerum fugit voluptatibus veniam sequi cupiditate sunt expedita, vel voluptate excepturi. Voluptatum eligendi assumenda sit ex labore natus et recusandae, vitae libero temporibus provident voluptate debitis animi! Ab delectus qui dicta officia voluptas autem, possimus beatae asperiores ullam!
-       </div>
+   
+   <section id="section1">
+       
+    
+       
+       
+            <span id="imgoeuf">
+                <img src="./public/img/icon-eclosion.png" alt="">
+            </span>
+                <div id="textoeuf">
+                     <div id="h1oeuf">
+                        <h1>Eclosion</h1>
+                    </div>
+                <div id="oeuf">
+                    <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illum saepe, in delectus quo explicabo quod. Atque veniam eius saepe consequuntur accusamus
+                    exercitationem voluptates iste cumque facere corrupti aut unde eligendi, aliquid harum sit vitae
+                    recusandae doloribus porro assumenda totam officia nostrum, ipsam rerum! Maxime recusandae, totam,
+                    est incidunt vitae harum fugit alias numquam dicta expedita enim ab temporibus deserunt dolor!
+                     </p>
+                </div>
+        </div>
+        
+       
        
        
 
    </section>
+
+   <div>
+       <ul>
+        <li><a href=""><span><img src="./public/img/Logo-logo.png" alt=""></span><span> Logo</span></a></li>
+        <li><a href=""><span><img src="./public/img/icon-charte-graphic.png" alt=""></span><span>Charte graphiques</span></a></li>
+        <li><a href=""><span><img src="./public/img/site-single-page.png" alt=""></span><span>Site single page</span></a></li>
+        <li><a href=""><span><img src="./public/img/carte-visite.png" alt=""></span><span>Carte de visite</span></a></li>
+        </ul>
+    </div>
    <!-- fin 1ere section -->
+
+    <!-- debut 2e section -->
+    <section>
+        
+    </section>
+    <!-- fin 2e section -->
    <!-- fin du corps -->
 </body>
 </html>

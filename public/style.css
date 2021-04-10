@@ -1,3 +1,6 @@
+
+/* pour mettre le site plus petit comme sur limg on reduit la taille du body */
+/* et on le deplace un peu vers la droite */
 body{
    
     justify-content: center;
@@ -5,14 +8,11 @@ body{
     margin-left: 20%;
 }
 
+/* ********* */
+/* ********* */ 
+/* HEADER TIME */
 
-
-
-
-/* header */
-
-
-
+/* le heaut du header */
 #headertop{
     background-color: black;
     
@@ -21,80 +21,166 @@ body{
     align-items: center;
     
 }
-ul{
-    display:flex
+/* le nav header */
+/* le nav on le deplace vers la droite */
+nav{
+
+    margin-left: 25%;
+    
 }
+/* ul en display flex pour mettre en ligne les listes */
+/* on enleve les points noirs btw */
+ul{
+    display:flex;
+    list-style-type: none;
+    
+}
+/* on centre le txt des li, on agrandit linterieur et augmente la taille du txt */
 nav>ul>li {
-   
-   
-   width: 100px;
-   flex-wrap: wrap;
-   justify-content: center;
+    
    text-align: center;
-   padding-left: 10px;
+   padding: 10px;
    font-size: 80%;
    
     
 }
-
+/* on change de background qd on passe sur les li */
 nav>ul>li:hover {
    
    
     background-color: lightblue;
      
  }
-nav{
-  
-   
-    margin-left: 25%;
-    
-}
-span{
+/* on enleve lestyle du txt et on le met en blanc */
+#headernavul>li>a{
+    text-decoration: none;
     color: white;
 }
-header>:nth-child(2){
+/* fin haut header */
+/* ********* */
+
+
+
+
+/* la banniere du header */
+#banniereheader{
     display: flex;
     background-color:slategrey;
     
     align-items: center;
     height: 300px;
 }
-section:nth-child(2)>div>img{
-    
+/* on agrandit limage package de 150% */
+#imgpackage{
+    background-size: 150%;
     margin-left:150px;
+
 }
-section:nth-child(2)>div+div>div>h1{
+/* la div txt quon decale vers la droite */
+#headerdiv{
+    margin-left: 150px;
+}
+/* on met le h1 en blanc et on agrandit sa taille */
+#headerdiv>div>h1{
     
-    margin-left:300px;
+    
     color: white;
     font-size: 300%;
 }
-section:nth-child(2)>div+div>div>p{
-    
-    margin-left:300px;
+/* on met p en blanc et on agrandit sa taille */
+#headerdiv>div+div>p{
+      
     color: white;
     font-size: 250%;
 }
 /* fin header */
 
-/* debut section */
-    section>div>h1{
-       margin-top: 100px;
-        display: flex;
+/* ********* */
+/* ********* */
+
+/* SECTION TIME */
+
+/* debut section 1*/
+
+    section>span+div>div>h1{
+       margin-top: 70px;
+        
         justify-content: center;
         font-size: 300%;
         width: 200px;
         background-color:slategray;
         color: white;
-        padding-left: 20px;
+        padding-left: 40px;
         padding-right: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-left: 42%;
+        margin-left: 30%;
+    }
+    section>span+div>div>h1:hover{
+        background-color: blue;
+     }
+    header+section{
+        border: solid;
+        display: flex;
+    }
+    section>span{
+        margin-top: 180px;
+        margin-left: 20px;
+    }
+    section>span+div>:nth-child(2)>p{
+        flex-wrap: wrap;
+        width: 600px;
+        margin-left: 50%;
+    }
+        
+    /* ------------------------------- */
+    header+section+div{
+        display: flex;
+        height: 200px;
+        background-color: burlywood;
+
+    }
+    header+section+div>ul>li{
+        
+        transform: scale(0.5);
+        width: 150%;
+        text-align: center;
+        font-size: 200%;
+        color: black;
+        height: 300px;
+        text-decoration: none;
+    }
+    header+section+div>ul>li:hover{
+        background-color: blanchedalmond;
+    }
+    header+section+div>ul{
+        display: flex;
+        height: 200px;
+        
+        margin-top: 0%;
+        list-style-type: none;
+        align-items: center;
+        transform: scale(0.75);
+    }
+    header+section+div>ul>li>a{
+        
+        /* transform: scale(0.5); */
+        text-align: center;
+        text-decoration: none;
+        
+    }
+    header+section+div>ul>li>a>span+span{
+        
+        padding: 10px;
+        color: black;
+        
+        
     }
     
-       
-         
-         
-     
-/* fin section */
+    
+/* fin section 1 */
+
+/* debut section2 */
+
+/* fin section 2 */
+
