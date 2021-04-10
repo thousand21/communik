@@ -100,87 +100,113 @@ nav>ul>li:hover {
 
 /* SECTION TIME */
 
-/* debut section 1*/
 
-    section>span+div>div>h1{
-       margin-top: 70px;
-        
-        justify-content: center;
+/* le haut de la section est mise en flex */
+.section1haut{
+    /* border: solid;  */
+    display: flex;
+}
+
+/* debut section 1*/
+/* imgeoeuf  on le place la ou il faut*/
+.imgsectionhaut{
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.divtextsection{
+    width: 100%;
+    display:inline-block;
+}
+/* h1 oeuf on agrandit sa taille, un bg gris, on met un peu 
+de padding pour agrandir le bg , et le texte est en blanc*/
+.h1section>h1{
+       
         font-size: 300%;
-        width: 200px;
+        
         background-color:slategray;
         color: white;
-        padding-left: 40px;
-        padding-right: 20px;
-        padding-top: 10px;
+        padding-left: 70px;
+        padding-right: 70px;
         padding-bottom: 10px;
-        margin-left: 30%;
-    }
-    section>span+div>div>h1:hover{
-        background-color: blue;
-     }
-    header+section{
-        border: solid;
-        display: flex;
-    }
-    section>span{
-        margin-top: 180px;
-        margin-left: 20px;
-    }
-    section>span+div>:nth-child(2)>p{
-        flex-wrap: wrap;
-        width: 600px;
-        margin-left: 50%;
-    }
+        padding-top: 10px;
         
-    /* ------------------------------- */
-    header+section+div{
+}
+/*  la div qui contient le h1,on lui met flex,margin,
+on met flex et au centre  */ 
+.h1section{
+        margin-top: 20px;
+        margin-right: 25%;
         display: flex;
-        height: 200px;
+        
+        justify-content: center;  
+                
+}
+/* la div qui contient le p on lui donne un      */  
+.text{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 600px;
+        border: solid;
+        margin-left: 30%;
+ }
+  /* on soccupe de la 2eme partie de la 1ere section       */
+
+    /* on cree une div appelee section bas qui regroupe les logos
+    avec un bg burly et une taille de 200px */
+    .section1bas{
+        display: flex;
+        /* height: 200px; */
         background-color: burlywood;
+         align-items: center;
+        justify-content: center; 
 
     }
-    header+section+div>ul>li{
+    /* notreliste appellee liste ul va centrer les elements
+    a l'interieur */
+    .listeul{
+        display: flex;
+        align-items: center;
+         justify-content: center; 
         
-        transform: scale(0.5);
-        width: 150%;
-        text-align: center;
-        font-size: 200%;
-        color: black;
-        height: 300px;
-        text-decoration: none;
+        
+       
     }
-    header+section+div>ul>li:hover{
+    /* on centre le txt des li et on le place au milieu de la bg */
+    .listeul>li{
+      
+        text-align: center;
+        margin-bottom: 40px;
+        
+    }
+    /* on reduit les images de 50% */
+    .listeul>li>a>div>img{
+         transform: scale(0.5); 
+        
+    }
+    /* on reduit la taille de la div qui contient limage */
+    .listeul>li>a>div{
+        height: 200px;
+    }
+    /* qd on passe sur la liste il ya un hover */
+    .listeul>li:hover{
         background-color: blanchedalmond;
     }
-    header+section+div>ul{
-        display: flex;
-        height: 200px;
+    
+    /* on enleve la decoration et on met en noir */
+    .listeul>li>a{
         
-        margin-top: 0%;
-        list-style-type: none;
-        align-items: center;
-        transform: scale(0.75);
-    }
-    header+section+div>ul>li>a{
-        
-        /* transform: scale(0.5); */
-        text-align: center;
-        text-decoration: none;
-        
-    }
-    header+section+div>ul>li>a>span+span{
-        
-        padding: 10px;
+        /* padding: 10px; */
         color: black;
-        
-        
+        text-decoration: none;
+       
     }
     
     
-/* fin section 1 */
+ /* FIN SECTION  */
+ /* ********* */
+/* ********* */
 
-/* debut section2 */
 
-/* fin section 2 */
 
