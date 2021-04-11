@@ -5,7 +5,8 @@ body{
    
     justify-content: center;
     width: 60%;
-    margin-left: 20%;
+    margin: auto;
+    box-shadow: 0px 0px 20px 20px rgb(0, 0, 0 ,0.09);
 }
 
 /* ********* */
@@ -102,7 +103,7 @@ nav>ul>li:hover {
 
 
 /* le haut de la section est mise en flex */
-.section1haut{
+.sectionhaut{
     /* border: solid;  */
     display: flex;
 }
@@ -144,23 +145,24 @@ on met flex et au centre  */
 }
 /* la div qui contient le p on lui donne un      */  
 .text{
-        display: flex;
+        
         justify-content: center;
         margin-top: 10px;
         width: 600px;
-        border: solid;
+        
         margin-left: 30%;
  }
   /* on soccupe de la 2eme partie de la 1ere section       */
 
     /* on cree une div appelee section bas qui regroupe les logos
-    avec un bg burly et une taille de 200px */
-    .section1bas{
+    avec un bg burly  */
+    .sectionbas{
         display: flex;
-        /* height: 200px; */
+
         background-color: burlywood;
-         align-items: center;
+       
         justify-content: center; 
+        
 
     }
     /* notreliste appellee liste ul va centrer les elements
@@ -168,7 +170,7 @@ on met flex et au centre  */
     .listeul{
         display: flex;
         align-items: center;
-         justify-content: center; 
+        justify-content: center; 
         
         
        
@@ -185,6 +187,30 @@ on met flex et au centre  */
          transform: scale(0.5); 
         
     }
+    /* la div qui contient la derniere icone on chipote 
+    la taille et les couleurs */
+    #iconesolo{
+        display: flex;
+        justify-content:center;
+        justify-content: space-evenly;
+        height: 180px;
+        /* align-items: center; */
+        /* text-align: center; */
+        background-color: burlywood;
+        
+    }
+    /* on met le text de carte de visite au centre */
+    #iconesolo>div>p{
+        
+        text-align: center;
+    }
+    /* on chipote limage du bas */
+    #iconesolo>div>img{
+        /* transform: scale(0.5); */
+        height: 120px;
+        width: 120px;
+    }
+    
     /* on reduit la taille de la div qui contient limage */
     .listeul>li>a>div{
         height: 200px;
@@ -197,7 +223,7 @@ on met flex et au centre  */
     /* on enleve la decoration et on met en noir */
     .listeul>li>a{
         
-        /* padding: 10px; */
+        
         color: black;
         text-decoration: none;
        
@@ -208,5 +234,47 @@ on met flex et au centre  */
  /* ********* */
 /* ********* */
 
+/* DEBUT FOOTER */
+
+/* on mets display flex au footer
+ pour aligner les elements
+ et le text ecrit en blanc */
+ footer{
+    background-color: black;
+    color: white;
+ }
+ /* on les escpaces dans le footer haut onles aligne
+ un peu despace en haut et on centre */
+#footerhaut{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 25px;
+    
+}
+
+/* pour le mot c.v.g on le met a droite et un peu 
+a gauche */
+#footerbas{
+    display:flex;
+    
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/* on met un flex dnas la div qui contient les images */
+.ulfooter{
+    display: flex;
+    
+}
+/* on reduit les images du footer */
+.ulfooter>div>a>img{
+    height: 70px;
+    width: 70px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+
+/* FIN FOOTER */
 
 
