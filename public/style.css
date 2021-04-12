@@ -1,5 +1,5 @@
-
-/* pour mettre le site plus petit comme sur limg on reduit la taille du body */
+@media (min-width:1870px){
+    /* pour mettre le site plus petit comme sur limg on reduit la taille du body */
 /* et on le deplace un peu vers la droite */
 body{
    
@@ -73,7 +73,7 @@ nav>ul>li:hover {
 }
 /* on agrandit limage package de 150% */
 #imgpackage{
-    background-size: 150%;
+    /* background-size: 150%; */
     margin-left:150px;
 
 }
@@ -233,7 +233,7 @@ on met flex et au centre  */
  /* FIN SECTION  */
  /* ********* */
 /* ********* */
-
+}
 /* DEBUT FOOTER */
 
 /* on mets display flex au footer
@@ -278,5 +278,298 @@ a gauche */
 }
 
 /* FIN FOOTER */
+
+    
+@media (min-width:1000px) and (max-width:1869px){
+    /* pour mettre le site plus petit comme sur limg on reduit la taille du body */
+/* et on le deplace un peu vers la droite */
+body{
+   
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 20px 20px rgb(0, 0, 0 ,0.09);
+}
+
+/* ********* */
+/* ********* */ 
+/* HEADER TIME */
+
+/* le heaut du header */
+#headertop{
+    background-color: black;
+    
+    height: 150px;
+    display: flex;
+    align-items: center;
+    
+}
+/* le nav header */
+/* le nav on le deplace vers la droite */
+nav{
+
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* ul en display flex pour mettre en ligne les listes */
+/* on enleve les points noirs btw */
+ul{
+    display:flex;
+    list-style-type: none;
+    
+}
+/* on centre le txt des li, on agrandit linterieur et augmente la taille du txt */
+nav>ul>li {
+   display:block;
+   text-align: center;
+   padding: 10px;
+   font-size: 60%;
+   
+    
+}
+/* on change de background qd on passe sur les li */
+nav>ul>li:hover {
+   
+   
+    background-color: lightblue;
+     
+ }
+/* on enleve lestyle du txt et on le met en blanc */
+#headernavul>li>a{
+    display:block;
+    text-decoration: none;
+    color: white;
+}
+ul>li>a>span>img{
+    width: 30px;
+    height: 30px;
+    border: solid white;
+}
+/* fin haut header */
+/* ********* */
+
+
+
+
+/* la banniere du header */
+#banniereheader{
+    display: flex;
+    background-color:slategrey;
+    
+    align-items: center;
+    height: 300px;
+}
+/* on agrandit limage package de 150% */
+#imgpackage{
+    /* background-size: 150%; */
+    margin-left:150px;
+
+}
+/* la div txt quon decale vers la droite */
+#headerdiv{
+    margin-left: 150px;
+}
+/* on met le h1 en blanc et on agrandit sa taille */
+#headerdiv>div>h1{
+    
+    
+    color: white;
+    font-size: 300%;
+}
+/* on met p en blanc et on agrandit sa taille */
+#headerdiv>div+div>p{
+      
+    color: white;
+    font-size: 250%;
+}
+/* fin header */
+
+/* ********* */
+/* ********* */
+
+/* SECTION TIME */
+
+
+/* le haut de la section est mise en flex */
+.sectionhaut{
+    /* border: solid;  */
+    display: flex;
+}
+
+/* debut section 1*/
+/* imgeoeuf  on le place la ou il faut*/
+.imgsectionhaut{
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.divtextsection{
+    width: 100%;
+    display:inline-block;
+}
+/* h1 oeuf on agrandit sa taille, un bg gris, on met un peu 
+de padding pour agrandir le bg , et le texte est en blanc*/
+.h1section>h1{
+       
+        font-size: 300%;
+        
+        background-color:slategray;
+        color: white;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        
+}
+/*  la div qui contient le h1,on lui met flex,margin,
+on met flex et au centre  */ 
+.h1section{
+        margin-top: 20px;
+        margin-right: 25%;
+        display: flex;
+        
+        justify-content: center;  
+                
+}
+/* la div qui contient le p on lui donne un      */  
+.text{
+        
+        justify-content: center;
+        margin-top: 10px;
+        width: 600px;
+        
+        margin-left: 30%;
+ }
+  /* on soccupe de la 2eme partie de la 1ere section       */
+
+    /* on cree une div appelee section bas qui regroupe les logos
+    avec un bg burly  */
+    .sectionbas{
+        display: flex;
+
+        background-color: burlywood;
+       
+        justify-content: center; 
+        
+
+    }
+    /* notreliste appellee liste ul va centrer les elements
+    a l'interieur */
+    .listeul{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        
+        
+       
+    }
+    /* on centre le txt des li et on le place au milieu de la bg */
+    .listeul>li{
+      
+        text-align: center;
+        margin-bottom: 40px;
+        
+    }
+    /* on reduit les images de 50% */
+    .listeul>li>a>div>img{
+         transform: scale(0.5); 
+        
+    }
+    /* la div qui contient la derniere icone on chipote 
+    la taille et les couleurs */
+    #iconesolo{
+        display: flex;
+        justify-content:center;
+        justify-content: space-evenly;
+        height: 180px;
+        /* align-items: center; */
+        /* text-align: center; */
+        background-color: burlywood;
+        
+    }
+    /* on met le text de carte de visite au centre */
+    #iconesolo>div>p{
+        
+        text-align: center;
+    }
+    /* on chipote limage du bas */
+    #iconesolo>div>img{
+        /* transform: scale(0.5); */
+        height: 120px;
+        width: 120px;
+    }
+    
+    /* on reduit la taille de la div qui contient limage */
+    .listeul>li>a>div{
+        height: 200px;
+    }
+    /* qd on passe sur la liste il ya un hover */
+    .listeul>li:hover{
+        background-color: blanchedalmond;
+    }
+    
+    /* on enleve la decoration et on met en noir */
+    .listeul>li>a{
+        
+        
+        color: black;
+        text-decoration: none;
+       
+    }
+    
+    
+ /* FIN SECTION  */
+ /* ********* */
+/* ********* */
+}
+/* DEBUT FOOTER */
+
+/* on mets display flex au footer
+ pour aligner les elements
+ et le text ecrit en blanc */
+ footer{
+    background-color: black;
+    color: white;
+ }
+ /* on les escpaces dans le footer haut onles aligne
+ un peu despace en haut et on centre */
+#footerhaut{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 25px;
+    
+}
+
+/* pour le mot c.v.g on le met a droite et un peu 
+a gauche */
+#footerbas{
+    display:flex;
+    
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+/* on met un flex dnas la div qui contient les images */
+.ulfooter{
+    display: flex;
+    
+}
+/* on reduit les images du footer */
+.ulfooter>div>a>img{
+    height: 70px;
+    width: 70px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.ulfooter>div:hover{
+    background-color: lightblue;
+}
+
+/* FIN FOOTER */
+
+
 
 
